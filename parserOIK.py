@@ -10,7 +10,7 @@ headers = {
 i = 0
 n = 27820001915226
 while i <= 24:
-    url = "http://cikrf.ru/iservices/sgo-visual-rest/vibory/27820001915220/results/" + str(27820001915226 + i) + "/major/"
+    url = "http://cikrf.ru/iservices/sgo-visual-rest/vibory/27820001915220/results/" + str(n + i) + "/major/"
     data = requests.get(url, headers=headers).json()
     deputats_name = []
     deputats_voice = []
